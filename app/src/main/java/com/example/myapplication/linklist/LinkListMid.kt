@@ -1,7 +1,7 @@
-package com.example.myapplication.ui.theme
+package com.example.myapplication.linklist
 
 fun main(){
-    var list=LinkListMid()
+    var list= LinkListMid()
     list.addNode(1, list.head)
     list.addNode(2,list.head)
     list.addNode(3,list.head)
@@ -20,10 +20,10 @@ data class Node(var  data:Int,var next: Node?){
 }
 
 class LinkListMid {
-    var head:Node?=null
+    var head: Node?=null
 
-    fun addNode(data:Int,head:Node?){
-        var node=Node(data,head)
+    fun addNode(data:Int,head: Node?){
+        var node= Node(data,head)
         node.next=head
         this.head=node
     }
